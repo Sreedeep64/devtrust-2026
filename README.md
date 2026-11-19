@@ -2,6 +2,10 @@
 
 DevTrust is a compact, interactive data story about how developers use and verify AI tools. It turns selected findings from the 2026 Stack Overflow Developer Survey into one practical recommendation: design AI workflows for verification, not autopilot.
 
+I chose this question because adoption numbers alone can hide the part that matters in real engineering work: what people do before they trust an answer enough to ship it. The result is a small, source-first case study rather than a general argument for or against AI.
+
+**[Open the live case study](https://sreedeep64.github.io/devtrust-2026/)** · **[Download the one-slide findings PDF](https://sreedeep64.github.io/devtrust-2026/output/pdf/developer-ai-trust-2026.pdf)**
+
 ## What is included
 
 - Three switchable views covering trust, validation habits, and workflow use

@@ -1,0 +1,16 @@
+section,metric,response_count,percent,question_n,source
+AI tool usage,Uses at least one AI tool,14461,82.8,17464,https://survey.stackoverflow.co/2026/ai/data/ai-select
+Trust,I trust it when I can easily verify the output,6872,48.0,14304,https://survey.stackoverflow.co/2026/ai/data/ai-trust
+Trust,I trust it for many tasks but not important work decisions,2329,16.3,14304,https://survey.stackoverflow.co/2026/ai/data/ai-trust
+Trust,I trust it for low-risk work tasks only,2326,16.3,14304,https://survey.stackoverflow.co/2026/ai/data/ai-trust
+Trust,I do not trust it for most work tasks,1754,12.3,14304,https://survey.stackoverflow.co/2026/ai/data/ai-trust
+Trust,I trust it for many tasks including important work decisions,949,6.6,14304,https://survey.stackoverflow.co/2026/ai/data/ai-trust
+Trust,Not sure or do not use AI tools,74,0.5,14304,https://survey.stackoverflow.co/2026/ai/data/ai-trust
+Verification,Run it locally,10067,76.5,13162,https://survey.stackoverflow.co/2026/ai/data
+Verification,Compare against codebase context,8411,63.9,13162,https://survey.stackoverflow.co/2026/ai/data
+Verification,Inspect tests or security implications,6977,53.0,13162,https://survey.stackoverflow.co/2026/ai/data
+Verification,Read official documentation,4998,38.0,13162,https://survey.stackoverflow.co/2026/ai/data
+Verification,Use as-is,1265,9.6,13162,https://survey.stackoverflow.co/2026/ai/data
+Attitude,Favorable - all respondents,,62.0,14428,https://survey.stackoverflow.co/2026/ai/data
+Attitude,Favorable - 1 to 5 years work experience,,53.0,3306,https://survey.stackoverflow.co/2026/ai/data
+Attitude,Favorable - 16 or more years work experience,,69.0,5546,https://survey.stackoverflow.co/2026/ai/data

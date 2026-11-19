@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A concise analysis of how developers use, verify and trust AI tools, based on the 2026 Stack Overflow Developer Survey.">
+    <meta name="theme-color" content="#13152d">
+    <meta property="og:title" content="DevTrust 2026 · AI adoption is broad. Trust is conditional.">
+    <meta property="og:description" content="An interactive survey analysis and product recommendation based on verified Stack Overflow data.">
+    <meta property="og:url" content="https://sreedeep64.github.io/devtrust-2026/">
+    <meta property="og:image" content="https://sreedeep64.github.io/devtrust-2026/assets/devtrust-cover.png">
+    <link rel="canonical" href="https://sreedeep64.github.io/devtrust-2026/">
+    <title>DevTrust 2026 · Developer attitudes toward AI tools</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to analysis</a>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="DevTrust 2026 home">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span>DevTrust <b>2026</b></span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="#evidence">Evidence</a>
+        <a href="#recommendation">Recommendation</a>
+        <a href="#methods">Methods</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> Stack Overflow Developer Survey 2026</p>
+          <h1>AI adoption is broad.<br><em>Trust is conditional.</em></h1>
+          <p class="lede">Developers are not choosing between “use AI” and “avoid AI.” They are drawing a practical line: use it where the output can be checked, then verify before the work ships.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#evidence">Explore the evidence</a>
+            <a class="button button-quiet" href="output/pdf/developer-ai-trust-2026.pdf" download>Download one-slide PDF <span aria-hidden="true">↓</span></a>
+            <a class="button button-quiet" href="https://survey.stackoverflow.co/2026/ai/data" target="_blank" rel="noreferrer">View source data <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+
+        <aside class="hero-card" aria-label="Key finding">
+          <div class="signal-orbit" aria-hidden="true">
+            <span class="orbit orbit-one"></span>
+            <span class="orbit orbit-two"></span>
+            <span class="signal-core">48<span>%</span></span>
+          </div>
+          <p class="hero-card-label">The largest trust group</p>
+          <h2>“I trust it when I can easily verify the output.”</h2>
+          <div class="hero-card-foot">
+            <span>6.6% trust it for important decisions</span>
+            <span>n = 14,304</span>
+          </div>
+        </aside>
+      </section>
+
+      <section class="metric-strip" aria-label="Summary metrics">
+        <article>
+          <strong>76.5%</strong>
+          <p>run an AI answer locally before using it</p>
+        </article>
+        <article>
+          <strong>63.9%</strong>
+          <p>compare the answer with codebase context</p>
+        </article>
+        <article>
+          <strong>9.6%</strong>
+          <p>say they use an AI answer as-is</p>
+        </article>
+        <p class="metric-note">Validation question · multiple selections allowed · n = 13,162</p>
+      </section>
+
+      <section class="evidence section-shell" id="evidence">
+        <div class="section-heading">
+          <p class="eyebrow">Evidence</p>
+          <h2>The behavior behind the headline</h2>
+          <p>Switch views to compare reported trust, validation habits and where AI enters the workflow.</p>
+        </div>
+
+        <div class="chart-card">
+          <div class="chart-tabs" role="tablist" aria-label="Choose a survey view">
+            <button type="button" role="tab" data-view="trust">Trust</button>
+            <button type="button" role="tab" data-view="validation">Validation</button>
+            <button type="button" role="tab" data-view="workflow">Workflow</button>
+          </div>
+
+          <div class="chart-intro">
+            <div>
+              <h3 id="chart-title"></h3>
+              <p id="chart-subtitle"></p>
+            </div>
+            <a id="chart-source" href="#" target="_blank" rel="noreferrer">Source ↗</a>
+          </div>
+
+          <div class="chart-axis" aria-hidden="true"><span>0</span><span>25</span><span>50</span><span>75</span><span>100%</span></div>
+          <div class="bar-chart" id="chart" aria-live="polite"></div>
+          <p class="chart-meta" id="chart-meta"></p>
+        </div>
+
+        <div class="experience-compare" aria-labelledby="experience-title">
+          <div>
+            <p class="card-kicker">Experience cut</p>
+            <h3 id="experience-title">Favorable attitudes rise with work experience in this sample.</h3>
+            <p>This is an association in the survey responses, not evidence that experience caused the difference.</p>
+          </div>
+          <div class="compare-bars" role="img" aria-label="Favorable attitude toward AI tools: 53 percent among respondents with 1 to 5 years of experience, 62 percent overall, and 69 percent among respondents with 16 or more years of experience">
+            <div><span>1-5 years</span><i style="--compare: 53%"></i><strong>53%</strong></div>
+            <div><span>Overall</span><i style="--compare: 62%"></i><strong>62%</strong></div>
+            <div><span>16+ years</span><i style="--compare: 69%"></i><strong>69%</strong></div>
+            <p>AI sentiment question · overall n = 14,428</p>
+          </div>
+        </div>
+
+        <div class="interpretation-grid">
+          <article class="interpretation-card standout">
+            <p class="card-kicker">What stands out</p>
+            <h3>Verification is the bridge between adoption and trust.</h3>
+            <p>The most common trust position is conditional, not absolute. Developers appear comfortable delegating a first pass while keeping the right to test, compare and reject.</p>
+          </article>
+          <article class="interpretation-card">
+            <p class="card-kicker">What not to conclude</p>
+            <h3>High usage does not equal blind confidence.</h3>
+            <p>These results do not show that developers want AI to make consequential decisions. Only 6.6% selected the broadest trust option.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="recommendation" id="recommendation">
+        <div class="recommendation-copy">
+          <p class="eyebrow light">Recommendation</p>
+          <h2>Design for verification,<br>not autopilot.</h2>
+          <p>Teams introducing AI tools should make checking the output easier than trusting it blindly. Put context, tests and an undo path beside the suggestion—not in a separate process people will skip.</p>
+          <ol class="principles">
+            <li><span>01</span><div><b>Start with reversible work</b><p>Use AI first where a mistake is visible and easy to undo.</p></div></li>
+            <li><span>02</span><div><b>Bring proof into the workflow</b><p>Show source context, tests and security checks next to the output.</p></div></li>
+            <li><span>03</span><div><b>Keep accountability human</b><p>For important decisions, name the person who reviews and approves.</p></div></li>
+          </ol>
+        </div>
+
+        <div class="policy-lab">
+          <div class="policy-lab-head">
+            <div>
+              <p>Guardrail explorer</p>
+              <h3>Match the check to the risk</h3>
+            </div>
+            <span id="policy-badge">Guardrail 3/5</span>
+          </div>
+          <label for="risk">If a wrong answer would be…</label>
+          <input id="risk" type="range" min="1" max="5" value="3" step="1">
+          <div class="risk-scale" aria-hidden="true"><span>Easy to undo</span><strong id="risk-value">Material</strong><span>Hard to undo</span></div>
+          <div class="policy-result">
+            <span aria-hidden="true">✓</span>
+            <div>
+              <p>Suggested control</p>
+              <h4 id="policy-title">Test</h4>
+              <p id="policy-copy">Run locally and require relevant tests before the change moves forward.</p>
+            </div>
+          </div>
+          <p class="illustration-note">This explorer is an interpretation of the survey finding, not a survey question.</p>
+        </div>
+      </section>
+
+      <section class="methods section-shell" id="methods">
+        <div class="section-heading compact">
+          <p class="eyebrow">Methods &amp; limits</p>
+          <h2>Read the chart with the sample in mind.</h2>
+        </div>
+        <div class="methods-grid">
+          <article>
+            <span>Dataset</span>
+            <h3>Stack Overflow Developer Survey 2026</h3>
+            <p>The full survey reports 30,903 valid responses across 169 countries. This analysis uses published aggregates from the AI section, where question-level samples are smaller and vary by view.</p>
+          </article>
+          <article>
+            <span>Representation</span>
+            <h3>Respondents, not every developer</h3>
+            <p>This is a voluntary survey of Stack Overflow’s developer community. Results describe respondents and should not be treated as a census of all software professionals.</p>
+          </article>
+          <article>
+            <span>Interpretation</span>
+            <h3>Association, not cause</h3>
+            <p>The survey captures self-reported attitudes and behavior at one point in time. It cannot show that one behavior caused another.</p>
+          </article>
+        </div>
+        <div class="source-row">
+          <p><b>Primary sources</b> · All figures were checked against Stack Overflow’s published tables.</p>
+          <div>
+            <a href="https://survey.stackoverflow.co/2026/ai/data" target="_blank" rel="noreferrer">AI data tables ↗</a>
+            <a href="https://survey.stackoverflow.co/2026/knowledge" target="_blank" rel="noreferrer">Knowledge &amp; attribution ↗</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="brand"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span>DevTrust <b>2026</b></span></div>
+      <p>A portfolio data note by Sreedeep Reddy Dugasani. <a href="https://github.com/Sreedeep64/devtrust-2026">View source on GitHub ↗</a></p>
+      <p>© <span id="year"></span></p>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
